@@ -1,0 +1,31 @@
+.body{
+    background-image: url("/assets/img/carosel2.jpg");
+}
+
+
+.colorAzul
+{
+    background-color:#7F48F5;
+}
+
+.colorRoxo
+{
+    background-color: violet;
+}
+
+.fonteJB
+{
+    font-family: 'Anton', sans-serif;
+}
+
+.fonteContatos
+{
+    font-family: 'Crete Round', serif;
+}
+
+#assunto {
+    resize: none;
+  }
+
+ 
+
