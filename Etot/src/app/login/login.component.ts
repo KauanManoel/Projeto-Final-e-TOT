@@ -48,7 +48,7 @@ findAllUsusarios(){
       }
 
      
-     //alterar router.navigate/home  depois para page dentro dos cursos, por exemplo
+     
     },erro =>{
       if(erro.status == "500"){
         this.userList.forEach(user => {

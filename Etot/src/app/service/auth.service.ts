@@ -12,7 +12,7 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   token = {
-    headers: new HttpHeaders().set('Authorization', environment.token)
+   headers: new HttpHeaders().set('Authorization', environment.token)
   }
 
 logar(userLogin: UserLogin){
@@ -31,34 +31,29 @@ getAllUsuarios() {
 btnSair(){
   let ok = false
   let token = environment.token
-
   if (token != '') {
     ok = true
   }
   return ok
 }
-
-
-// Método para mostrar o botão Cadastrar e Login, para quando nao houver usuario logado
-btnLogin(){
+btnLogin() {
   let ok = false
   let token = environment.token
-  
   if (token == '') {
     ok = true
   }
   return ok
-  }
-
-
-professor(){
-  let ok = false
-  let tipo = localStorage.getItem('tipo')
-  
- if (tipo == 'professor'){ 
-    ok = true
-  }
-  return ok
 }
+
+
+  professor(){
+    let ok = false
+    let tipo = localStorage.getItem('tipo')
+    
+   if (tipo != 'professor'){ 
+      ok = true
+    }
+    return ok
+  }
 
 }
