@@ -39,7 +39,7 @@ export class PostCategoriaComponent implements OnInit {
 
   cadastrar(){
     if(this.categoria.titulo == null){
-      alert('Preencha o campo corretamente')
+      this.alert.showAlertDanger('Preencha o campo corretamente')
     } else {
       this.categoriaService.postCategoria(this.categoria).subscribe((resp: Categoria) => {
         this.categoria = resp

@@ -49,8 +49,8 @@ btnLogin() {
   professor(){
     let ok = false
     let tipo = localStorage.getItem('tipo')
-    
-   if (tipo != 'professor'){ 
+        
+   if (tipo == 'professor'){ 
       ok = true
     }
     return ok

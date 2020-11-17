@@ -28,7 +28,7 @@ export class CategoriaService {
   }
 
   putCategoria(categoria: Categoria){
-    return this.http.put('http://localhost:8080/categoria',categoria, this.token)
+    return this.http.put('http://localhost:8080/categoria', categoria, this.token)
   }
 
   deleteCategoria(id: number){

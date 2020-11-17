@@ -30,6 +30,7 @@ export class CursosComponent implements OnInit {
     window.scroll(0,0)
     this.findAllProdutos()
     this.findAllCategorias()
+    
 
     }
   
