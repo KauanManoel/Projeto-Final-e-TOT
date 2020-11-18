@@ -25,6 +25,8 @@ import { DeleteProdutoComponent } from './delete-produto/delete-produto.componen
 import { AlunoCursosComponent } from './aluno-cursos/aluno-cursos.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { AlertsComponent } from './alerts/alerts.component';
+import { SocialComponent } from './social/social.component';
+import { ApoiadoresComponent } from './apoiadores/apoiadores.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { AlertsComponent } from './alerts/alerts.component';
     DeleteProdutoComponent,
     AlunoCursosComponent,
     CursosComponent,
-    AlertsComponent
+    AlertsComponent,
+    SocialComponent,
+    ApoiadoresComponent
   ],
   imports: [
     BrowserModule,

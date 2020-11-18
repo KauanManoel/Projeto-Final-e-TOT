@@ -1,3 +1,14 @@
+.corLetra{
+
+  font-weight: bold
+}
+
+.direita {
+
+  text-align: end;
+
+}
+
 .corTipo{
 
   color: white;

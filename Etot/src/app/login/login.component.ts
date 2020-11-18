@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit {
 
   user: User = new User()
   userList: User[]
+  
   constructor(
     private authService: AuthService,
     private router: Router,
@@ -24,10 +25,11 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-   this.findAllUsusarios()
+   this.findAllUsuarios()
+   window.scroll(0,0)
    
   }
-findAllUsusarios(){
+findAllUsuarios(){
   this.authService.getAllUsuarios().subscribe((resp: User[]) =>{
     this.userList = resp
     
