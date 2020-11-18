@@ -23,6 +23,8 @@ export class CadastroComponent implements OnInit {
 
   tipo: string
 
+  tipoOk: boolean
+
   user: User = new User()
   
 
@@ -63,8 +65,7 @@ export class CadastroComponent implements OnInit {
        
   }
 
-  validaNome()
-  {
+  validaNome()  {
     const txtNome = document.getElementById('txtNome')
     if (this.user.nome.length < 3)
     {
@@ -78,8 +79,7 @@ export class CadastroComponent implements OnInit {
     }
   }
 
-  validaUsuario()
-  {
+  validaUsuario()  {
     const txtNome = document.getElementById('txtUsuario')
     if (this.user.usuario.length < 3)
     {
@@ -93,8 +93,7 @@ export class CadastroComponent implements OnInit {
     }
   }
 
-  validaEmail()
-  {
+  validaEmail()  {
       const txtEmail = document.getElementById('txtEmail')
   
       if (this.user.email.indexOf('@') == -1 || this.user.email.indexOf('.') == -1) 
@@ -113,8 +112,7 @@ export class CadastroComponent implements OnInit {
       }
   }
 
-  confirmaSenha()
-  {
+  confirmaSenha()  {
     const txtSenhaConf = document.getElementById('txtSenhaConf')
 
     if (this.senha !== this.user.senha)
@@ -123,8 +121,7 @@ export class CadastroComponent implements OnInit {
     }
   }
 
-  validaSenha()
-  {
+  validaSenha()  {
     const txtSenha = document.getElementById('txtSenha')
     
     

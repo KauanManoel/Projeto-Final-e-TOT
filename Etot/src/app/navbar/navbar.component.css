@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 
+.bg-nav {
+  background: linear-gradient(#141e30, #243b55)
+}
 .fonteE{
   font-family: 'Redressed', cursive;
   color: white;

@@ -1,31 +1,26 @@
-<div class="container">
-    <div class="row mt-5 mb-5">
-        <div class="col-md-12">
-            <h1 class="text-center">Login</h1>
-        </div>
-
+<div class="corFundo">
+    <div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
-    <div class="row mb-5 d-flex justify-content-center">
-        <div class="col-md-6">
-            <div>
 
-
-                <div class="form-group">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" class="form-control" id="usuario" aria-describedby="emailHelp"
-                        placeholder="seu apelido" [(ngModel)]='userLogin.usuario'>
-
-                </div>
-
-                <div class="form-group">
-                    <label for="senha">Senha</label>
-                    <input type="password" class="form-control" id="senha" placeholder="Senha"
-                        [(ngModel)]='userLogin.senha'>
-                </div>
-
-                <button type="submit" class="btn btn-outline-sucess w-25" (click)='entrar()'>Enviar</button>
-
+    <div class="login-box margens">
+        <h2>Login</h2>
+        <form>
+            <div class="user-box">
+                <input type="text" name="Userlogin" required="" [(ngModel)]='userLogin.usuario'>
+                <label>Username</label>
             </div>
-        </div>
+            <div class="user-box">
+                <input type="password" name="Userlogin" required="" [(ngModel)]='userLogin.senha'>
+                <label>Password</label>
+            </div>
+            <a (click)='entrar()'>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Login
+            </a>
+        </form>
     </div>
 </div>

@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Gothic+A1|Kaushan+Script|Libre+Baskerville|Lobster");
+
+.bg-home {
+  background: linear-gradient(#141e30, #243b55)
+}
+
 .body {
   font-family: "Gothic A1", sans-serif;
   font-size: 16px;
