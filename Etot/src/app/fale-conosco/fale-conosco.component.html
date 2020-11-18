@@ -1,83 +1,67 @@
-<div class="jumbotron jumbotron-fluid colorAzul">
-    <div class="container ">
-        <h1 class="text-center fonteJB">
-            Entre em contato conosco
-        </h1>
-
-    </div>
-</div>
+<div class="bg-contato">
 
 
-<div class=" container justify-content">
-    <div class=" mb-5 bd-highlight">
+    <div class="background">
+        <div class="container d-flex ">
 
-
-
-
-
-        <div class="d-flex flex-row bd-highlight mb-3">
-
-            <div class="col-md-5 d-flex justify-content">
-
-                <div>
-
-                    <!--Campos de preenchimento-->
-                    <!--Campo Inserir nome-->
-                    <label for="nome">Nome completo: </label> <br>
-                    <input type="text" id='nome' class="w-100 p-1 bg-white rounded" [(ngModel)]='nome'
-                        (keyup)='validaNome()'>
-                    <div id="txtNome"></div>
-                    <br>
-                    <!--Campo Inserir nome-->
-                    <!--Campo inserir email-->
-                    <label for="email">Email: </label> <br>
-                    <input type="text" id='email' class="w-100 p-1 bg-white rounded" [(ngModel)]='email'
-                        (keyup)='validaEmail()'>
-                    <div id="txtEmail"></div>
-                    <br>
-                    <!--Campo inserir email-->
-                    <!--Campo para inserir assunto-->
-                    <label for="assunto">Assunto: </label> <br>
-                    <textarea class="w-100 shadow-sm p-3 mb-5 bg-white rounded" name="assunto" id="assunto" cols="60"
-                        rows="5" [(ngModel)]='assunto' (keyup)='validaAssunto()'></textarea>
-                    <div id="txtAssunto"></div>
-                    <br>
-                    <br>
-                    <!--Campo para inserir assunto-->
-                    <!--botão enviar-->
-                    <button type="button" class="mb-5 btn btn-success" (click)='enviar()'>Enviar</button>
-                    <!--botão enviar-->
-                    <!--Campos de preenchimento-->
-                    <!-- informações de contato, telefone e e-mail -->
-                    <div>
-                        <h5 class="fonteContato">
-                            Telefone: 11 92345567
-                        </h5>
-
-
-                        <h5 class="fonteContato">
-                            email: etot.c4@hotmail.com
-                        </h5>
-
-
+            <div class="screen">
+                <div class="screen-header">
+                    <div class="screen-header-left">
+                        <div class="screen-header-button close"></div>
+                        <div class="screen-header-button maximize"></div>
+                        <div class="screen-header-button minimize"></div>
                     </div>
-                    <!-- informações de contato, telefone e e-mail -->
+                    <div class="screen-header-right">
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                    </div>
+                </div>
+                <div class="screen-body">
+                    <div class="screen-body-item left">
+                        <div class="app-title">
+                            <span>Entre em</span>
+                            <span>Contato conosco</span>
+                        </div>
+                        <div class="app-contact">CONTACT INFO : 11999999999</div>
+                    </div>
+                    <div class="screen-body-item">
+                        <div class="app-form">
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="NOME" id='nome' [(ngModel)]='nome'
+                                    (keyup)='validaNome()'>
+                                <div id="txtNome"></div>
+                            </div>
 
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="EMAIL" id='email' [(ngModel)]='email'
+                                    (keyup)='validaEmail()'>
+                                <div id="txtEmail"></div>
+                            </div>
+
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="MENSAGEM" id='assunto'
+                                    [(ngModel)]='assunto' (keyup)='validaAssunto()'>
+                                <div id="txtAssunto"></div>
+                            </div>
+
+
+                            <div class="app-form-group buttons">
+
+                                <button class="app-form-button" (click)='enviar()'>ENVIAR</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- texto lateral -->
-            <div class="col-md-4 ">
-                <h3 class="p-5"> Quem num gosta di mé, boa gentis num é. Casamentiss faiz malandris se pirulitá.</h3>
+        </div>
+        <div class="col-md-3 w3-animate-top m-tot">
+            <div class="justify-content-end ">
+                <img height="400px" src="assets/img/tot.png" alt="Deus Tot">
             </div>
-            <!-- texto lateral -->
-            <!-- Imagem lateral do e-toth com animação pelo css-->
-            <div class="col-md-3 w3-animate-top">
-                <div class="d-flex justify-content-end ">
-                    <img height="400px" src="assets/img/tot.png" alt="Deus Tot">
-                </div>
-            </div>
-            <!-- Imagem lateral do e-toth -->
         </div>
 
     </div>
+
+
 </div>
