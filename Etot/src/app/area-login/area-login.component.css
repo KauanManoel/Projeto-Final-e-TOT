@@ -1,0 +1,17 @@
+.bg-categoria{background: linear-gradient(#141e30, #243b55)}
+
+.text-monospace{
+    color: white;
+}
+
+#container{
+	box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5em auto;
+	height: 320px;
+	width: 800px;
+	
+}
