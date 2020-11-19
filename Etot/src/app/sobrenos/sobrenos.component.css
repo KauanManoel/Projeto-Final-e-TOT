@@ -11,7 +11,7 @@
 
 /* Cor das letras violetas*/
 .cor {
-color: darkviolet;
+color: rgb(5, 5, 5);
     
     
 }
@@ -37,6 +37,9 @@ color: darkviolet;
       1px 0 rgb(200, 149, 216), 0 -1px rgb(243, 238, 243);
       
       
+}
+.onmousemove{
+  display:700px
 }
 
 
@@ -84,7 +87,7 @@ body {
     width: 100%;
     height: 0;
     border-radius: 50%;
-    background-color: black;
+    background-color:#243b55;
     position: absolute;
     bottom: 135%;
     right: 0;
@@ -103,7 +106,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: black;
+    background-color:#243b55;
     position: absolute;
     top: 0;
     left: 0;
@@ -134,7 +137,7 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: black;
+    background-color: #243b55;
     position: absolute;
     bottom: -100px;
     left: 0;
@@ -159,6 +162,6 @@ body {
   }
   
   .our-team .social li a:hover {
-    color: black;
+    color: #243b55;
     background-color: #f7f5ec;
   }

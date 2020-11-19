@@ -57,8 +57,7 @@ validaNome()
   }
 }
 
-  validaEmail()
-{
+  validaEmail(){
     const txtEmail = document.getElementById('txtEmail')
 
     if (this.email.indexOf('@') == -1 || this.email.indexOf('.') == -1) 
