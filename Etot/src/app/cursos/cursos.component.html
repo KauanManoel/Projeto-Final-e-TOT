@@ -1,10 +1,12 @@
 <div class="bg-cursos">
 
-    
+    <br><br><br><br>
     <div class="container d-flex flex-wrap justify-content-center">
         
+        <h1 class="cor">Cursos Disponíveis</h1>
+
         <div id="container" *ngFor='let item of listaProdutos'>
-            
+
             
 
             <!-- Start	Product details -->
@@ -46,13 +48,13 @@
                 <!-- 	product Information-->
                 <div class="info">
                     <h2>Descrição</h2>
-                    <ul> 
+                    <ul>
                         <li><strong>Categoria: {{item.categoria.titulo}}</strong></li>
                         <li><strong>Duração: </strong>{{item.duracao}}h</li>
                         <li><strong>Professor: </strong>{{item.professor}}</li>
                         <li><strong>Certificado: </strong>SIM</li>
                         <li><strong>Nível: </strong>Intermediário</li>
-                        
+
 
                     </ul>
                 </div>
