@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertsService } from '../service/alerts.service';
 
 @Component({
   selector: 'app-fale-conosco',
@@ -20,7 +21,9 @@ export class FaleConoscoComponent implements OnInit {
   
   
 
-  constructor()
+  constructor(
+    private alert: AlertsService
+  )
   { 
     
   }
@@ -34,11 +37,11 @@ export class FaleConoscoComponent implements OnInit {
 {
   if (this.nomeOk == true && this.emailOk == true && this.assuntoOk == true)
   {
-      alert("Formulário enviado com sucesso!")
+      this.alert.showAlertSuccess("Formulário enviado com sucesso!")
   }
   else
   {
-      alert("Preencha o formulário corretamente antes de enviar.")
+      this.alert.showAlertDanger("Preencha o formulário corretamente antes de enviar.")
   }
 }
 

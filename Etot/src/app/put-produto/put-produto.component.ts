@@ -51,7 +51,7 @@ export class PutProdutoComponent implements OnInit {
     this.produtoService.putProduto(this.produto).subscribe((resp: Produto) => {
       this.produto = resp
       this.router.navigate(['/area-login'])
-      this.alert.showAlertSuccess('Postagem alterada com sucesso')
+      this.alert.showAlertSuccess('Curso alterado com sucesso')
     }, err => {
       if (err.status == '500'){
             this.alert.showAlertDanger('Preencha todos os campos corretamente antes de enviar!')
