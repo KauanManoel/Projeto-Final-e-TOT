@@ -55,5 +55,13 @@ btnLogin() {
     }
     return ok
   }
-
+  aluno(){
+    let ok = false
+    let tipo = localStorage.getItem('tipo')
+        
+   if (tipo == 'aluno'){ 
+      ok = true
+    }
+    return ok
+  }
 }

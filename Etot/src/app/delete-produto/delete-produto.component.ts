@@ -37,8 +37,9 @@ export class DeleteProdutoComponent implements OnInit {
 
   btnSim() {
     this.produtoService.deleteProduto(this.produto.id).subscribe(() => {
-      this.router.navigate(['/manutencao'])
       this.alert.showAlertSuccess('Produto excluído com sucesso!')
+      this.router.navigate(['/manutencao'])
+      
     })
   }
 
