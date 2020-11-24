@@ -37,10 +37,10 @@ export class DeleteCategoriaComponent implements OnInit {
   btnSim() {
     if (this.categoria.produto.length != 0) {
       alert('Essa categoria não pode ser a, pois já pertence a um produto.')
-      this.router.navigate(['/cadastro-categoria'])
+      this.router.navigate(['/manutencao'])
     } else {
       this.categoriaService.deleteCategoria(this.categoria.id).subscribe(() => {
-        this.router.navigate(['/cadastro-categoria'])
+        this.router.navigate(['/manutencao'])
         this.alert.showAlertSuccess('Categoria apagada com sucesso!')
       })
     }
@@ -48,7 +48,7 @@ export class DeleteCategoriaComponent implements OnInit {
   }
 
   btnNao() {
-    this.router.navigate(['/cadastro-categoria'])
+    this.router.navigate(['/manutencao'])
   }
 
 }

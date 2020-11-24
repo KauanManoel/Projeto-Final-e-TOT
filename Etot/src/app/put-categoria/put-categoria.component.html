@@ -6,23 +6,25 @@
     <div class="container register mt-0">
         <div class="row">
             <div class="col-md-3 register-left">
-                <img src="https://i.imgur.com/tNxiFvP.png" alt="" />
+                <img src="https://i.imgur.com/tNxiFvP.png" alt="">
                 <h3>Bem-Vinde</h3>
                 <p>Edite a categoria</p>
             </div>
             <div class="col-md-9 register-right">
                 <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <h3 class="register-heading">Edite uma categoria</h3>
+                    <div class="fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <h3 class="register-heading">Altere a Categoria</h3>
                         <div class="row register-form">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Nome da categoria" value="" [(ngModel)]="categoria.titulo">
+                                    <input type="text" class="form-control" placeholder="Nome da categoria" value=""
+                                        [(ngModel)]="categoria.titulo">
+
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <button type="button" class="btnRegister" value="Concluir" (click)="salvar()">
-                                    Concluir </button>
+                                    Cadastrar </button>
                             </div>
                         </div>
                     </div>
