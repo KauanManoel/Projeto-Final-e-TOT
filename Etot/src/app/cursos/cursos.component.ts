@@ -19,6 +19,8 @@ export class CursosComponent implements OnInit {
   listaCategorias: Categoria[]
   IdCategoria: number
 
+  
+
   constructor(
     private produtoService: ProdutoService,
     private categoriaService: CategoriaService,
@@ -53,6 +55,27 @@ export class CursosComponent implements OnInit {
       this.categoria = resp;
     })
   }
+
+  comprar(){
+    
+  }
+
+  // publicar() {
+  //   this.categoria.id = this.IdCategoria
+  //   this.produto.categoria = this.categoria
+
+  //   if (this.produto.nome == null || this.produto.professor == null || this.produto.categoria == null) {
+  //     this.alert.showAlertDanger('Preencha todos os campos antes de cadastrar!')
+  //   } else {
+  //     this.produtoService.postProduto(this.produto).subscribe((resp: Produto) => {
+  //       this.produto = resp
+  //       this.produto = new Produto()
+  //       this.alert.showAlertSuccess('Postagem realizada com sucesso!')
+  //       this.findAllProdutos()
+  //     })
+  //   }
+  // }
+
 
 
 }

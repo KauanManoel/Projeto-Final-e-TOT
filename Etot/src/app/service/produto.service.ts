@@ -16,23 +16,23 @@ export class ProdutoService {
   }
 
   getAllProdutos(){
-    return this.http.get('https://e-tot.herokuapp.com/produto')
+    return this.http.get('http://localhost:8080/produto')
   }
 
   getByIdProduto(id: number) {
-    return this.http.get(`https://e-tot.herokuapp.com/produto/${id}`, this.token)
+    return this.http.get(`http://localhost:8080/produto/${id}`, this.token)
   }
 
   postProduto(produto: Produto){
-    return this.http.post('https://e-tot.herokuapp.com/produto', produto, this.token)
+    return this.http.post('http://localhost:8080/produto', produto, this.token)
   }
 
   putProduto(produto: Produto){
-    return this.http.put('https://e-tot.herokuapp.com/produto',produto, this.token)
+    return this.http.put('http://localhost:8080/produto',produto, this.token)
   }
 
   deleteProduto(id: number){
-    return this.http.delete(`https://e-tot.herokuapp.com/produto/${id}`, this.token) 
+    return this.http.delete(`http://localhost:8080/produto/${id}`, this.token) 
   }
 
 }

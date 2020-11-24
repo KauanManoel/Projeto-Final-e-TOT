@@ -193,3 +193,12 @@
 
 .product-image:hover img {transition: all 0.3s ease-out;}
 .product-image:hover img {transform: scale(1.2, 1.2);}
+
+  /* Codigo para deixar o input com background igual ao fundo"transparente" */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active  {
+	transition: background-color 5000s;
+	-webkit-text-fill-color: #fff !important;
+  }

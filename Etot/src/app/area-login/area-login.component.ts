@@ -20,6 +20,10 @@ export class AreaLoginComponent implements OnInit {
   listaCategorias: Categoria[]
   IdCategoria: number
 
+  certificado: string
+  
+  nivel: string
+
   constructor(
     private produtoService: ProdutoService,
     private categoriaService: CategoriaService,
@@ -71,4 +75,8 @@ export class AreaLoginComponent implements OnInit {
   }
 
 
+
+  escolhaNivel(event) {
+    this.nivel = event.target.value
+  }
 }

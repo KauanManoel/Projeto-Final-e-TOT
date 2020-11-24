@@ -4,7 +4,7 @@
       <header class="st_table_header">
         <h2 class="editH2">PAGINA CRIADA EM HOMENAGEM AOS NOSSO ALUNES APOIADORES</h2><br>
         <div class="st_row justify-content-center">
-        <div class="st_column _rank">Ranking</div>
+          <div class="st_column _rank">Ranking</div>
           <div class="st_column _name">Nome</div>
           <div class="st_column _surname">Local</div>
           <div class="st_column _year">Idade</div>
@@ -146,26 +146,26 @@
   </main>
   <br><br><br><br><br><br><br><br><br><br>
   <div class="login-box margens">
-          <h2>Apoiar</h2>
-          <form>
-              <div class="user-box">
-                  <input type="text" name="Userlogin" id="nome" >
-                  <label>Nome</label>
-              </div>
-              <div class="user-box">
-                  <input type="text" name="email" id='email' [(ngModel)]='email'
-                  (keyup)='validaEmail()'>
-                  <label>E-mail</label>
-              </div>
-              <div id="txtEmail"></div>
-              <a>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Apoiar
-            </a>
-        </form>
-    </div>
+    <h2>Apoiar</h2>
+    <form>
+      <div class="user-box">
+        <div class="direita" id="txtNome"></div>
+        <input type="text" name="Userlogin" id="nome" [(ngModel)]='nome' (keyup)='validaNome()'>
+        <label>Nome</label>
+      </div>
+      <div class="user-box">
+        <div class="direita" id="txtEmail"></div>
+        <input type="text" name="email" id='email' [(ngModel)]='email' (keyup)='validaEmail()'>
+        <label>E-mail</label>
+      </div>
+      <a (click)='enviar()'>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Apoiar
+      </a>
+    </form>
+  </div>
 
 </div>

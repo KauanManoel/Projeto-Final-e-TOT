@@ -16,15 +16,15 @@ export class AuthService {
   }
 
 logar(userLogin: UserLogin){
-  return this.http.post('https://e-tot.herokuapp.com/usuario/login', userLogin)
+  return this.http.post('http://localhost:8080/usuario/login', userLogin)
 }
 
 cadastrar(user: User) {
-  return this.http.post('https://e-tot.herokuapp.com/usuario/cadastro', user)
+  return this.http.post('http://localhost:8080/usuario/cadastro', user)
 }
 
 getAllUsuarios() {
-  return this.http.get('https://e-tot.herokuapp.com/usuario') 
+  return this.http.get('http://localhost:8080/usuario') 
 }
 
 // Método para mostrar o botão Sair apenas quando houver um token, ou seja, usuário logado
