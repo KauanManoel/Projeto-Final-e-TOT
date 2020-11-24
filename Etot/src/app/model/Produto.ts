@@ -9,6 +9,6 @@ export class Produto {
     public preco: number
     public nivel: string
     public categoria: Categoria
-    public usuario: User
+   // public usuario: User
 
 }

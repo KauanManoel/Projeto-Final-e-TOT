@@ -79,4 +79,5 @@ export class AreaLoginComponent implements OnInit {
   escolhaNivel(event) {
     this.nivel = event.target.value
   }
+
 }
