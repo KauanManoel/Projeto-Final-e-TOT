@@ -10,6 +10,7 @@ import { DeleteProdutoComponent } from './delete-produto/delete-produto.componen
 import { FaleConoscoComponent } from './fale-conosco/fale-conosco.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { ManutencaoComponent } from './manutencao/manutencao.component';
 import { PostCategoriaComponent } from './post-categoria/post-categoria.component';
 import { PutCategoriaComponent } from './put-categoria/put-categoria.component';
 import { PutProdutoComponent } from './put-produto/put-produto.component';
@@ -24,7 +25,7 @@ const routes: Routes = [
   {path: 'faleconosco', component: FaleConoscoComponent},
   {path: 'login', component: LoginComponent},
   {path: 'cadastro', component: CadastroComponent},
-  {path: 'area-login', component: AreaLoginComponent},
+  {path: 'area-instrutor', component: AreaLoginComponent},
   {path: 'cadastro-categoria', component: PostCategoriaComponent},
   {path: 'editar-categoria/:id', component: PutCategoriaComponent},
   {path: 'delete-categoria/:id', component: DeleteCategoriaComponent},
@@ -34,6 +35,7 @@ const routes: Routes = [
   {path: 'cursos', component: CursosComponent},
   {path: 'social', component: SocialComponent},
   {path: 'apoiadores', component: ApoiadoresComponent},
+  {path: 'manutencao', component: ManutencaoComponent},
 ];
 
 @NgModule({

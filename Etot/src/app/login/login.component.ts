@@ -45,7 +45,7 @@ findAllUsuarios(){
      environment.token = this.userLogin.token     
      localStorage.setItem('tipo', this.userLogin.tipo)
       if(this.userLogin.tipo == 'professor'){
-        this.router.navigate(['/area-login'])
+        this.router.navigate(['/area-instrutor'])
       } else{
         this.router.navigate(['/aluno-cursos'])
       }

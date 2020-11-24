@@ -20,7 +20,6 @@ export class AreaLoginComponent implements OnInit {
   listaCategorias: Categoria[]
   IdCategoria: number
 
-  certificado: string
   
   nivel: string
 
@@ -80,4 +79,20 @@ export class AreaLoginComponent implements OnInit {
     this.nivel = event.target.value
   }
 
+//Categoria metodos
+
+
+cadastrar(){
+  if(this.categoria.titulo == null){
+    this.alert.showAlertDanger('Preencha o campo corretamente')
+  } else {
+    this.categoriaService.postCategoria(this.categoria).subscribe((resp: Categoria) => {
+      this.categoria = resp
+      this.router.navigate[('/area-login')]
+      this.alert.showAlertSuccess("Categoria cadastrada com sucesso!")
+    })
+  }
 }
+
+}
+

@@ -18,7 +18,9 @@ export class PutProdutoComponent implements OnInit {
 
   categoria: Categoria = new Categoria()
   listaCategorias: Categoria[]
-  idCategoria: number
+  IdCategoria: number
+
+  nivel: string
 
   constructor(
     private categoriaService: CategoriaService,
@@ -45,12 +47,12 @@ export class PutProdutoComponent implements OnInit {
   }
 
   salvar(){
-    this.categoria.id = this.idCategoria
+    this.categoria.id = this.IdCategoria
     this.produto.categoria = this.categoria
 
     this.produtoService.putProduto(this.produto).subscribe((resp: Produto) => {
       this.produto = resp
-      this.router.navigate(['/area-login'])
+      this.router.navigate(['/area-instrutor'])
       this.alert.showAlertSuccess('Curso alterado com sucesso')
     }, err => {
       if (err.status == '500'){
@@ -66,9 +68,13 @@ export class PutProdutoComponent implements OnInit {
   }
 
  findByIdCategoria() {
-   this.categoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria) => {
+   this.categoriaService.getByIdCategoria(this.IdCategoria).subscribe((resp: Categoria) => {
      this.categoria = resp;
    })
  }
 
+
+ escolhaNivel(event) {
+  this.nivel = event.target.value
+}
 }

@@ -27,6 +27,7 @@ import { CursosComponent } from './cursos/cursos.component';
 import { AlertsComponent } from './alerts/alerts.component';
 import { SocialComponent } from './social/social.component';
 import { ApoiadoresComponent } from './apoiadores/apoiadores.component';
+import { ManutencaoComponent } from './manutencao/manutencao.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { ApoiadoresComponent } from './apoiadores/apoiadores.component';
     CursosComponent,
     AlertsComponent,
     SocialComponent,
-    ApoiadoresComponent
+    ApoiadoresComponent,
+    ManutencaoComponent
   ],
   imports: [
     BrowserModule,
