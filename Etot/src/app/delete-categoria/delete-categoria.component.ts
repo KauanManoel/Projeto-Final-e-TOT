@@ -40,8 +40,9 @@ export class DeleteCategoriaComponent implements OnInit {
       this.router.navigate(['/manutencao'])
     } else {
       this.categoriaService.deleteCategoria(this.categoria.id).subscribe(() => {
-        this.router.navigate(['/manutencao'])
+        
         this.alert.showAlertSuccess('Categoria apagada com sucesso!')
+        this.router.navigate(['/manutencao'])
       })
     }
 
