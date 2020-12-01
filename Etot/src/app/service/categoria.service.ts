@@ -16,23 +16,23 @@ export class CategoriaService {
   }
 
   getAllCategorias(){
-    return this.http.get('http://localhost:8080/categoria')
+    return this.http.get('https://e-tot.herokuapp.com/categoria')
   }
 
   getByIdCategoria(id: number) {
-    return this.http.get(`http://localhost:8080/categoria/${id}`, this.token)
+    return this.http.get(`https://e-tot.herokuapp.com/categoria/${id}`, this.token)
   }
 
   postCategoria(categoria: Categoria){
-    return this.http.post('http://localhost:8080/categoria', categoria, this.token)
+    return this.http.post('https://e-tot.herokuapp.com/categoria', categoria, this.token)
   }
 
   putCategoria(categoria: Categoria){
-    return this.http.put('http://localhost:8080/categoria', categoria, this.token)
+    return this.http.put('https://e-tot.herokuapp.com/categoria', categoria, this.token)
   }
 
   deleteCategoria(id: number){
-    return this.http.delete(`http://localhost:8080/categoria/${id}`, this.token) 
+    return this.http.delete(`https://e-tot.herokuapp.com/categoria/${id}`, this.token) 
   }
 
 }

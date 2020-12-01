@@ -4,7 +4,9 @@ import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { Categoria } from '../model/Categoria';
 import { Produto } from '../model/Produto';
+import { User } from '../model/User';
 import { AlertsService } from '../service/alerts.service';
+import { AuthService } from '../service/auth.service';
 import { CategoriaService } from '../service/categoria.service';
 import { ProdutoService } from '../service/produto.service';
 
@@ -22,6 +24,10 @@ export class CursosComponent implements OnInit {
   listaCategorias: Categoria[]
   IdCategoria: number
 
+  user: User = new User()
+  
+  
+
   token = {
     headers: new HttpHeaders().set('Authorization', environment.token)
    }
@@ -31,7 +37,8 @@ export class CursosComponent implements OnInit {
     private produtoService: ProdutoService,
     private categoriaService: CategoriaService,
     private router: Router,
-    private alert: AlertsService
+    private alert: AlertsService,
+    private userService: AuthService   
 
   ) { }
 
@@ -66,14 +73,16 @@ export class CursosComponent implements OnInit {
   comprar() {
     let ok = false
     let token = environment.token
+    
     if (token == '') {
       ok = true
-      this.alert.showAlertDanger("Para comprar este curso, realize seu cadastro.")
+      this.alert.showAlertDanger("Para comprar este curso, faça o login.")
     }else {
-     
-    this.alert.showAlertSuccess("Curso comprado com sucesso e enviado para seu e-mail!")
+      this.alert.showAlertSuccess("Curso comprado com sucesso e enviado para seu e-mail!")
+     }
+     return ok
+    
     }
-    return ok
+    
   }
 
-}

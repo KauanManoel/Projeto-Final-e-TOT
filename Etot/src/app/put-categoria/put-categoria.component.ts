@@ -44,7 +44,7 @@ export class PutCategoriaComponent implements OnInit {
       this.categoriaService.putCategoria(this.categoria).subscribe((resp: Categoria) => {
         this.categoria = resp
         this.router.navigate(['/area-instrutor'])
-        this.alert.showAlertSuccess('Tema atualizado com sucesso!')
+        this.alert.showAlertSuccess('Categoria atualizado com sucesso!')
       })
     }
   }

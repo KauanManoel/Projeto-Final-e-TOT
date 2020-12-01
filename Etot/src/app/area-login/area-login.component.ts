@@ -55,7 +55,7 @@ export class AreaLoginComponent implements OnInit {
       this.produtoService.postProduto(this.produto).subscribe((resp: Produto) => {
         this.produto = resp
         this.produto = new Produto()
-        this.alert.showAlertSuccess('Postagem realizada com sucesso!')
+        this.alert.showAlertSuccess('Curso cadastrado com sucesso!')
         this.findAllProdutos()
       })
     }
